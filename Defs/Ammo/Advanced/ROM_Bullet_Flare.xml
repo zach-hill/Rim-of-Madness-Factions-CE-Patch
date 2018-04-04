@@ -52,7 +52,7 @@
 
   <ThingDef Name="BaseFlare" ParentName="BaseBullet" Abstract="true">
     <graphicData>
-      <texPath>Things/Projectile/Pbullet</texPath>
+      <texPath>Projectile/CallOfCthulhu_Flare</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <projectile>
@@ -69,5 +69,39 @@
       <armorPenetration>0.65</armorPenetration>
     </projectile>
   </ThingDef>
+	
+  <RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeAmmo_Flare</defName>
+		<label>make Flares x25</label>
+		<description>Craft 25 Flares.</description>
+		<jobString>Making Flares.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>9</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Component</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_Flare>25</Ammo_Flare>
+		</products>
+    <workAmount>2250</workAmount>
+  </RecipeDef>
 	
 </Defs>

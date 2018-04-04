@@ -70,4 +70,30 @@
     </projectile>
   </ThingDef>
 	
+  <RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeAmmo_Harpoon</defName>
+		<label>make Harpoons x10</label>
+		<description>Craft 10 Harpoons.</description>
+		<jobString>Making Harpoons.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>9</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_Harpoon>10</Ammo_Harpoon>
+		</products>
+    <workAmount>2250</workAmount>
+  </RecipeDef>
+	
 </Defs>

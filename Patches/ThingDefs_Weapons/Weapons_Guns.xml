@@ -37,6 +37,33 @@
     </weaponTags>
   </Operation>
 
+  <Operation Class="PatchOperationReplace">
+	<xpath>*/ThingDef[defName="ROM_Gun_Revolver"]/tools</xpath>
+	<value>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>grip</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>1.55</cooldownTime>
+				<armorPenetration>0.1</armorPenetration>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>1.55</cooldownTime>
+				<armorPenetration>0.1</armorPenetration>
+			</li>
+		</tools>
+	</value>	
+   </Operation>
+  
   <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
     <defName>ROM_Gun_Harpoon</defName>
     <statBases>
@@ -71,6 +98,42 @@
       <li>CallOfCthulhu_Guns</li>
     </weaponTags>
   </Operation>
+  
+  <Operation Class="PatchOperationReplace">
+	<xpath>*/ThingDef[defName="ROM_Gun_Harpoon"]/tools</xpath>
+	<value>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>grip</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>1.55</cooldownTime>
+				<armorPenetration>0.1</armorPenetration>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>1.55</cooldownTime>
+				<armorPenetration>0.1</armorPenetration>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>head</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>1.8</cooldownTime>
+				<armorPenetration>0.3</armorPenetration>
+			</li>
+		</tools>
+	</value>	
+   </Operation>
   
   <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
     <defName>ROM_Gun_Flaregun</defName>
@@ -107,6 +170,33 @@
     </weaponTags>
   </Operation>
   
+  <Operation Class="PatchOperationReplace">
+	<xpath>*/ThingDef[defName="ROM_Gun_Flaregun"]/tools</xpath>
+	<value>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>grip</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>6</power>
+				<cooldownTime>1.55</cooldownTime>
+				<armorPenetration>0.1</armorPenetration>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>6</power>
+				<cooldownTime>1.55</cooldownTime>
+				<armorPenetration>0.1</armorPenetration>
+			</li>
+		</tools>
+	</value>	
+   </Operation>
+  
   <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
     <defName>ROM_Gun_TommyGun</defName>
     <statBases>
@@ -121,7 +211,7 @@
 		<recoilAmount>0.55</recoilAmount>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_TommyGun</defaultProjectile>
+      <defaultProjectile>Bullet_45ACP_FMJ</defaultProjectile>
       <warmupTime>0.5</warmupTime>
       <range>28</range>
       <soundCast>ShotHeavySMG</soundCast>
@@ -136,7 +226,7 @@
     <AmmoUser>
       <magazineSize>100</magazineSize>
       <reloadTime>8</reloadTime>
-      <ammoSet>AmmoSet_TommyGun</ammoSet>
+      <ammoSet>AmmoSet_45ACP</ammoSet>
     </AmmoUser>
     <FireModes>
     	<aiAimMode>AimedShot</aiAimMode>
@@ -145,6 +235,33 @@
       <li>CallOfCthulhu_Guns</li>
     </weaponTags>
   </Operation>
+  
+  <Operation Class="PatchOperationReplace">
+	<xpath>*/ThingDef[defName="ROM_Gun_TommyGun"]/tools</xpath>
+	<value>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>grip</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>1.55</cooldownTime>
+				<armorPenetration>0.1</armorPenetration>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>1.55</cooldownTime>
+				<armorPenetration>0.1</armorPenetration>
+			</li>
+		</tools>
+	</value>	
+   </Operation>
   
   <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
     <defName>ROM_Gun_PumpShotgun_COC</defName>
@@ -179,6 +296,33 @@
     	<aiAimMode>AimedShot</aiAimMode>
     </FireModes>
   </Operation>
+  
+  <Operation Class="PatchOperationReplace">
+	<xpath>*/ThingDef[defName="ROM_Gun_PumpShotgun_COC"]/tools</xpath>
+	<value>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>grip</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>1.8</cooldownTime>
+				<armorPenetration>0.15</armorPenetration>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>1.9</cooldownTime>
+				<armorPenetration>0.15</armorPenetration>
+			</li>
+		</tools>
+	</value>	
+   </Operation>
   
   <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
     <defName>ROM_Gun_SurvivalRifle_COC</defName>
@@ -215,6 +359,33 @@
     </FireModes>
   </Operation>
   
+  <Operation Class="PatchOperationReplace">
+	<xpath>*/ThingDef[defName="ROM_Gun_SurvivalRifle_COC"]/tools</xpath>
+	<value>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>grip</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>1.8</cooldownTime>
+				<armorPenetration>0.15</armorPenetration>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>1.9</cooldownTime>
+				<armorPenetration>0.15</armorPenetration>
+			</li>
+		</tools>
+	</value>	
+   </Operation>
+  
   <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
     <defName>ROM_Gun_LPRifle_COC</defName>
     <statBases>
@@ -249,5 +420,32 @@
     	<aiAimMode>AimedShot</aiAimMode>
     </FireModes>
   </Operation>
+  
+  <Operation Class="PatchOperationReplace">
+	<xpath>*/ThingDef[defName="ROM_Gun_LPRifle_COC"]/tools</xpath>
+	<value>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>grip</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>1.8</cooldownTime>
+				<armorPenetration>0.15</armorPenetration>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>1.9</cooldownTime>
+				<armorPenetration>0.15</armorPenetration>
+			</li>
+		</tools>
+	</value>	
+   </Operation>
   
 </Patch>

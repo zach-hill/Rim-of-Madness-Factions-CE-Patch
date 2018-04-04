@@ -173,23 +173,6 @@
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationAdd">
-		<xpath>*/ThingDef[defName="ROM_Pitchfork"]/statBases</xpath>
-		<value>
-    		<Bulk>3.5</Bulk>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationAdd">
-		<xpath>*/ThingDef[defName="ROM_Pitchfork"]</xpath>
-		<value>
-			<equippedStatOffsets>
-				<MeleeCritChance>0.2</MeleeCritChance>
-				<MeleeParryChance>0.15</MeleeParryChance>
-			</equippedStatOffsets>
-		</value>
-	</Operation>
-
 	<!-- Add tags -->
 
 	<Operation Class="PatchOperationSequence">
