@@ -8,6 +8,11 @@
       <iconPath>UI/Icons/ThingCategories/CaliberCharge</iconPath>
     </ThingCategoryDef>
 	
+   <CombatExtended.AmmoCategoryDef>
+     <defName>AmmoCategoryHarpoongun</defName>
+	 <label>harpoon</label>
+   </CombatExtended.AmmoCategoryDef>
+	
 	<!-- ==================== AmmoSet ========================== -->
 
   <CombatExtended.AmmoSetDef>
@@ -39,23 +44,24 @@
     <defName>Ammo_Harpoon</defName>
     <label>Harpoon</label>
     <graphicData>
-      <texPath>Things/Ammo/Neolithic/Pilum</texPath>
+      <texPath>Things/Ammo/Harpoon</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <statBases>
       <MarketValue>0.95</MarketValue>
     </statBases>
-    <ammoClass>FullMetalJacket</ammoClass>
+    <ammoClass>AmmoCategoryHarpoongun</ammoClass>
   </ThingDef>
 	
 	<!-- ================== Projectiles ================== -->
 
   <ThingDef Name="BaseHarpoon" ParentName="BaseBullet" Abstract="true">
+	<thingClass>CombatExtended.BulletCE</thingClass>
     <graphicData>
       <texPath>Projectile/CallOfCthulhu_HarpoonBullet</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <projectile>
+    <projectile Class="CombatExtended.ProjectilePropertiesCE">
       <damageDef>Bullet</damageDef>
       <speed>40</speed>
     </projectile>
@@ -63,8 +69,9 @@
 
   <ThingDef ParentName="BaseHarpoon">
     <defName>Bullet_Harpoon</defName>
+
     <label>Harpoon</label>
-    <projectile>
+    <projectile Class="CombatExtended.ProjectilePropertiesCE">
       <damageAmountBase>30</damageAmountBase>
       <armorPenetration>0.5</armorPenetration>
     </projectile>

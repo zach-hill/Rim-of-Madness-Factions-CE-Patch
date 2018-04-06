@@ -8,6 +8,11 @@
       <iconPath>UI/Icons/ThingCategories/CaliberCharge</iconPath>
     </ThingCategoryDef>
 	
+	<CombatExtended.AmmoCategoryDef>
+	  <defName>AmmoCategoryFlaregun</defName>
+	  <label>Flare cartridge</label>
+	</CombatExtended.AmmoCategoryDef>
+	
 	<!-- ==================== AmmoSet ========================== -->
 
   <CombatExtended.AmmoSetDef>
@@ -39,23 +44,24 @@
     <defName>Ammo_Flare</defName>
     <label>Flare cartridge</label>
     <graphicData>
-      <texPath>Things/Ammo/Rifle/FMJ</texPath>
+      <texPath>Things/Ammo/FlareGun</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <statBases>
       <MarketValue>0.95</MarketValue>
     </statBases>
-    <ammoClass>FullMetalJacket</ammoClass>
+    <ammoClass>AmmoCategoryFlaregun</ammoClass>
   </ThingDef>
 	
 	<!-- ================== Projectiles ================== -->
 
   <ThingDef Name="BaseFlare" ParentName="BaseBullet" Abstract="true">
+	<thingClass>CombatExtended.BulletCE</thingClass>
     <graphicData>
       <texPath>Projectile/CallOfCthulhu_Flare</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <projectile>
+    <projectile Class="CombatExtended.ProjectilePropertiesCE">
       <damageDef>Flame</damageDef>
       <speed>40</speed>
     </projectile>
@@ -64,7 +70,7 @@
   <ThingDef ParentName="BaseFlare">
     <defName>Bullet_Flare</defName>
     <label>Flare</label>
-    <projectile>
+    <projectile Class="CombatExtended.ProjectilePropertiesCE">
       <damageAmountBase>10</damageAmountBase>
       <armorPenetration>0.65</armorPenetration>
     </projectile>
