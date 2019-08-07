@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-	<name>Call of Cthulhu - Factions - CE Patch</name>
+	<name>Call of Cthulhu - Factions - CE Patch - 1.0</name>
 	<author>Saebbi</author>
 	<url></url>
-	<targetVersion>0.18.1722</targetVersion>
+	<supportedVersions>
+		<li>1.0</li>
+	</supportedVersions>
 	<description>Patches the ROM Factions mod to work with Combat Extended.</description>
 </ModMetaData>
